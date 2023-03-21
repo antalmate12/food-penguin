@@ -9,6 +9,7 @@ import styles from "@/styles/MainAppBar.module.scss";
 
 import penguinImage from "@/public/penguin.png";
 import Stack from "@mui/material/Stack";
+import Container from "@mui/material/Container";
 
 const MainAppBar = () => {
   return (
@@ -21,23 +22,24 @@ const MainAppBar = () => {
           color="primary"
         >
           <Toolbar>
-            <Stack
-              alignItems={"center"}
-              width={"100%"}
-              direction={"row"}
-              gap={4}
-            >
-              <Image
-                height={48}
-                width={48}
-                src={penguinImage}
-                alt={"penguin face"}
-              />
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                FoodPenguin
-              </Typography>
-            
-            </Stack>
+            <Container>
+              <Stack
+                alignItems={"center"}
+                width={"100%"}
+                direction={"row"}
+                gap={4}
+              >
+                <Image
+                  height={48}
+                  width={48}
+                  src={penguinImage}
+                  alt={"penguin face"}
+                />
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  FoodPenguin
+                </Typography>
+              </Stack>
+            </Container>
           </Toolbar>
         </AppBar>
       </Box>

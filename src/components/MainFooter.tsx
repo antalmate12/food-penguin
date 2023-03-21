@@ -3,24 +3,22 @@ import Toolbar from "@mui/material/Toolbar";
 import Image from "next/image";
 import penguinImage from "@/public/penguin.png";
 
+import appStoreImage from "@/public/stores/app-store.png";
+import playStoreImage from "@/public/stores/play-store.png";
+import Container from "@mui/material/Container";
+
 const MainFooter = () => {
   return (
     <Toolbar className={styles.MainFooter} component={"footer"}>
-      <Image height={48} width={48} src={penguinImage} alt={"penguin face"} />
-
-      <Image
-        height={38}
-        width={120}
-        alt="app store"
-        src="https://consumer-static-assets.wolt.com/app-store-badges/Download_on_the_App_Store_Badge_HU_RGB_blk_100317.svg"
-      />
-      <Image
-        height={38}
-        width={120}
-        alt="play store"
-        src="https://consumer-static-assets.wolt.com/app-store-badges/google-play-badge_hu.png"
-      />
-      <p>Footer</p>
+      <Container className={styles.FooterContainer}>
+        <div className={styles.LeftPromo}>
+        <Image height={48} width={48} src={penguinImage} alt={"penguin face"} /> 
+        <Image height={38} alt="app store" src={appStoreImage} />
+        <Image height={46} alt="play store" src={playStoreImage} /> 
+        </div>
+       
+        <p>Footer</p>
+      </Container>
     </Toolbar>
   );
 };

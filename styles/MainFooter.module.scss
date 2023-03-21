@@ -1,4 +1,21 @@
 .MainFooter {
   background-color: var(--background-reverse-color);
   color: var(--background-color);
+
+  .FooterContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .LeftPromo {
+      display: grid;
+      gap: 0.5rem;
+
+      img:first-of-type {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
