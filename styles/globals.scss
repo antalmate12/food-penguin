@@ -4,13 +4,22 @@
     "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --background-color: white;
+  --background-reverse-color: #1b1b1b;
   --foreground-color: black;
+  --divider-color: #ddd;
+}
+
+::selection {
+  background: var(--background-reverse-color);
+  color: var(--background-color);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1b1b1b;
+    --background-reverse-color: white;
     --foreground-color: white;
+    --divider-color: #333;
   }
 }
 
