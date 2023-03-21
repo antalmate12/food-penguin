@@ -13,7 +13,6 @@ const MainFooter = () => {
         width={120}
         alt="app store"
         src="https://consumer-static-assets.wolt.com/app-store-badges/Download_on_the_App_Store_Badge_HU_RGB_blk_100317.svg"
-        alt=""
       />
       <Image
         height={38}
