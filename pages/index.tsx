@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
+import Button from "@mui/material/Button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +16,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
-        ipsum nesciunt blanditiis reprehenderit consequuntur hic ad quas
-        distinctio officiis, nam expedita consequatur. Quo minima, aliquam
-        officiis fugiat magni quidem similique!
+        <Button variant="contained">Hello World</Button>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+          ipsum nesciunt blanditiis reprehenderit consequuntur hic ad quas
+          distinctio officiis, nam expedita consequatur. Quo minima, aliquam
+          officiis fugiat magni quidem similique!
+        </p>
       </main>
     </>
   );
