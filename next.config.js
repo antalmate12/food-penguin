@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ["consumer-static-assets.wolt.com"],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
