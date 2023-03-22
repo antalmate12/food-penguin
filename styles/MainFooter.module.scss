@@ -1,6 +1,7 @@
 .MainFooter {
-  background-color: var(--background-reverse-color);
-  color: var(--background-color);
+  background-color: #1b1b1b;
+  color: white;
+  border-top: 1px solid var(--divider-color) !important;
 
   .FooterContainer {
     display: grid;
